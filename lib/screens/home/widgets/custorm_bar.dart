@@ -29,14 +29,11 @@ class CustomBar extends StatelessWidget {
             ),
           ),
           Stack(
+
            
              
             children: [
-              
-              
               Container(
-                
-                
                 padding: EdgeInsets.all(10),
                 decoration: BoxDecoration(
                     color: Colors.white,
@@ -51,20 +48,21 @@ class CustomBar extends StatelessWidget {
                     ]),
                     
                 child: Icon(
-                  
                   Icons.shopping_cart_outlined,
                   color: Colors.grey,
+                  
                 ),
               ),
               Positioned(
                 right: 10,
                 top: 10,
                 child: Container(
-                   child: GestureDetector(
+                  child:  GestureDetector(
                     onTap: () {
                       Navigator.of(context).pushNamed(CartScreen.routeName);
                     },
                   ),
+                   
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
                     color: Theme.of(context).primaryColor,
